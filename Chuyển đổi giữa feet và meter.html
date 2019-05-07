@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <b> Chuyển đổi giữa feet và meters</b>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            Feet to Meter
+        </td>
+        <td>
+            <input type="number" oninput="feetToMeter(this.value)"/>
+        </td>
+        <td>
+            <p id="ResultFeetToMeter"></p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Meter to Feet
+        </td>
+        <td>
+            <input type="number" oninput="MeterToFeet(this.value)"/>
+        </td>
+        <td>
+            <p id="ResultMeterToFeet"></p>
+        </td>
+    </tr>
+</table>
+<script>
+    function feetToMeter(feet) {
+        feet = parseFloat(feet);
+        document.getElementById("ResultFeetToMeter").innerHTML=0.305*feet;
+
+    }
+    function MeterToFeet(meter) {
+        meter = parseFloat(meter);
+        document.getElementById("ResultMeterToFeet").innerHTML= 3.279*meter;
+    }
+</script>
+</body>
+</html>
